@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 813
+  Height = 294
+  Top = 129
+  Width = 559
+  BorderStyle = bsSingle
+  Caption = 'Adjust Screen v.2'
+  ClientHeight = 294
+  ClientWidth = 559
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '1.8.0.6'
+  object imageselected: TEdit
+    Left = 76
+    Height = 28
+    Top = 38
+    Width = 380
+    ReadOnly = True
+    TabStop = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 38
+    Width = 42
+    Caption = 'Image'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 472
+    Height = 25
+    Top = 38
+    Width = 75
+    Caption = 'Select'
+    OnClick = Button1Click
+    TabOrder = 1
+    TabStop = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 80
+    Height = 25
+    Top = 184
+    Width = 100
+    Max = 100
+    Min = 1
+    OnChange = TrackBar1Change
+    Position = 95
+    TabStop = False
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 23
+    Height = 20
+    Top = 184
+    Width = 47
+    Caption = 'Quality'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 192
+    Height = 20
+    Top = 184
+    Width = 28
+    Caption = '95%'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 232
+    Height = 60
+    Top = 184
+    Width = 323
+    Caption = '(For Lock Screen filesize must be less than 256kb,'#13#10' adjust quality to shrink filesize if necessary.'#13#10' Does not affect Wallpaper quality. )'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 464
+    Height = 25
+    Top = 248
+    Width = 75
+    Caption = 'Set'
+    OnClick = Button2Click
+    TabOrder = 3
+    TabStop = False
+  end
+  object CheckBoxresize: TCheckBox
+    Left = 23
+    Height = 24
+    Top = 152
+    Width = 132
+    Caption = 'Resize to Screen'
+    TabOrder = 4
+  end
+  object combowallpaper: TComboBox
+    Left = 104
+    Height = 28
+    Top = 84
+    Width = 147
+    ItemHeight = 20
+    ItemIndex = 1
+    Items.Strings = (
+      'Do Nothing'
+      'Set Wallpaper'
+      'Clear Wallpaper'
+    )
+    Style = csDropDownList
+    TabOrder = 5
+    Text = 'Set Wallpaper'
+  end
+  object Combolockscreen: TComboBox
+    Left = 104
+    Height = 28
+    Top = 120
+    Width = 147
+    ItemHeight = 20
+    ItemIndex = 1
+    Items.Strings = (
+      'Do Nothing'
+      'Set Lock Screen'
+      'Clear Lock Screen'
+    )
+    Style = csDropDownList
+    TabOrder = 6
+    Text = 'Set Lock Screen'
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 20
+    Top = 84
+    Width = 69
+    Caption = 'Wallpaper'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 20
+    Top = 120
+    Width = 78
+    Caption = 'Lock Screen'
+    ParentColor = False
+  end
+  object OpenDialog1: TOpenDialog
+    left = 272
+    top = 240
+  end
+end
